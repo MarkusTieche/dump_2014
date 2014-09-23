@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGNbE_oMaV8t2eFeISPpzbdE.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGJ6-ys_j0H4QL65VLqzI3wI.woff) format("woff");
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #DDDDDD;
+  color: #516774;
+  border: 1px solid transparent;
+  font-family: "Source Sans pro", sans-serif;
+}
+
+
+button {
+  display: inline-block;
+  margin: 0 1em;
+  border: none;
+  background: none;
+}
+button span {
+  display: block;
+}
+
+/* ====================== lines button ==================================================*/
+#btns {
+    position:absolute;
+    width: 60px;
+    height: 100px;
+    left:-60px;
+}
+
+#btn_menu {
+    width: 50px;
+    height: 40px;
+    top:100px;
+    border-radius: 10px 0 0 10px;
+    background:white;
+}
+
+#btn_menu:before
+{
+    content:"\2261";
+    font-size: 50px;
+    line-height: 0.5;
+}
+
+#options.open #btn_menu:before
+{
+    content:"\00d7";
+    font-size: 30px;
+    line-height: 0.5;
+}
+
+#options {
+    position:absolute; 
+    width: 200px; 
+    height: 400px; 
+    right: -200px; 
+    top:40px; 
+    background:white;
+    border-radius: 0px 0px 0px 10px;
+    
+     -webkit-transition: all 0.3s ease;                  
+    -moz-transition: all 0.3s ease;                 
+    -o-transition: all 0.3s ease;   
+    -ms-transition: all 0.3s ease;          
+    transition: all 0.3s ease;
+}
+
+#options.open
+{
+    right:1px;
+}
+
+#options h3
+{
+    margin: 5px;
+}
+
+#options p
+{
+    padding:0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin:3px;
+}

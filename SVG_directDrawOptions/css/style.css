@@ -1,0 +1,23 @@
+body,html
+{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+#SVG_scene
+{
+    height:70%;
+    width:100%;
+    margin:0;
+    padding:0;
+    background:#333333;
+}
+
+p
+{
+    text-align: center;
+    position: relative;
+    float:left;
+    margin: 10px;
+}

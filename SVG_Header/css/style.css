@@ -1,0 +1,22 @@
+body
+{
+    background: rgb(148,189,201);
+    height: 100%;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+#svg
+{
+    width: 100%;
+    height: 100%;
+}
+
+#svg_Wrapper
+{
+    position: relative;
+    margin: auto auto;
+    width: 100%;
+    height: 100%;
+}

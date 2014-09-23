@@ -1,0 +1,21 @@
+html, body
+{
+    height:100%;
+    width:100%;
+    font-family:'Helvetica';
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
+}
+
+svg
+{
+    min-width: 100%;
+    min-height: 100%;
+    background:#777;
+     -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}

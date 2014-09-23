@@ -1,0 +1,63 @@
+html, body
+{
+    height:100%;
+    width:100%;
+    font-family:'Helvetica';
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
+}
+
+svg
+{
+    min-width: 100%;
+    min-height:100%;
+}
+
+html
+{
+    height:100%;
+}
+
+h2
+{
+    position:absolute;
+    padding:10px;
+    color:white;
+}
+
+#svgWrapper
+{
+    width: 50%;
+    height:100%;
+    float:left;
+    background:url(http://i.imgur.com/cNBNp81.png) #ac0101;
+    background-size: 150px auto;
+}
+
+#center
+{
+  position:absolute;
+    left:50%;
+    width:4px;
+    background:white;
+    z-index:100;
+    height:100%;
+}
+
+button
+{
+    position:relative;
+    top:49%;
+    width: 200px;
+    margin-left: -100px;
+}
+
+#canvasWrapper
+{ 
+    width: 50%;
+    height:100%;
+    float:right;
+     background:url(http://i.imgur.com/cNBNp81.png) #01aca6;
+    background-size: 150px auto;
+}

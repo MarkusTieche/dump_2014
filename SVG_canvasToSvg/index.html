@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SVG direct draw</title>
+  <meta name="description" content="SVG direct draw">
+    <LINK type="text/css" href="css/style.css"  rel="stylesheet"/>
+    <script src="/js/main.js"></script>
+</head>
+<body onload="init()">
+    <div id="svgWrapper">
+        <h2>SVG</h2>
+        <svg id="SVG_scene" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
+    </div>
+    <div id="canvasWrapper">
+        <h2>Canvas</h2>
+        <canvas id="canvas" ></canvas>
+    </div>
+    
+    <div id="center">
+        <button onclick="renderSVG()">convert to SVG</button>
+        <button id="btn_animate" onclick="animateCanvas(event)">animate on SVG</button>
+    </div>
+</body>
+
+</html>

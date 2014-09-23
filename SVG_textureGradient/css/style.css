@@ -1,0 +1,41 @@
+html, body
+{
+    height:100%;
+    width:100%;
+    font-family:'Helvetica';
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
+    background-size: 150px auto;
+    background: rgb(51,51,51);
+}
+
+svg
+{
+    min-width: 100%;
+    min-height:100%;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;        
+    
+      -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+    
+     -moz-transition: all 0s;
+  -webkit-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s ;
+        
+}
+
+line:hover
+{
+    cursor: ew-resize;
+}

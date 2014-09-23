@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SVG direct draw</title>
+  <meta name="description" content="SVG direct draw">
+    <LINK type="text/css" href="css/style.css"  rel="stylesheet"/>
+    <script src="/js/main.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/phaser/2.0.5/phaser.min.js"></script>
+
+</head>
+
+<body onload="init()" style="margin:0px;">
+    
+    
+    <div id="options" class="open">
+        <div id="btns">
+        <button id="btn_menu" type="button" role="button" aria-label="Toggle Navigation"></button>
+        </div>    
+        <div style="text-align:center;">
+        <h3>spring</h3>
+            <p>damping:  1</p>
+            <input id="damping" type="range"  name="test" min="0" max="10" value="1" onchange="slide(event)"/>
+            <p>stiffness:  10</p>
+            <input id="stiffness" type="range"  min="0" max="10" value="10" onchange="slide(event)"/>
+        
+        <h3>constraint</h3>
+            <p>upper limit:  -1</p>
+            <input id="upper limit" type="range"  min="-5" max="10"  onchange="slide(event)"/>
+            <p>lower limit:  -10</p>
+            <input id="lower limit" type="range"  min="-15" max="5" value="-10" onchange="slide(event)"/>
+        
+            <p>constraint lock x axis</p>
+			 <input type="checkbox" name="zutat" value="constraint lock x axis" checked onchange="check(event)">
+            
+        <h3>wheel</h3>
+            <p>weight:  1</p>
+            <input id="weight" type="range"  min="0.1" max="10" value="1" onchange="slide(event)"/>
+            <p style="font-weight:800; color:#e03a3a;">drag the wheel</p>
+        </div>
+    </div>
+</body>
+</html>

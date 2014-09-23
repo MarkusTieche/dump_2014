@@ -1,0 +1,107 @@
+body, html
+{
+    width: 100%;
+    height: 30px;
+    background-color: #1A1A1A;
+    padding: 0px;
+    margin:0px;
+}
+
+#bg
+{
+    position: absolute;
+    bottom: 50px;
+    height: 100%;
+    width: 100%;
+    background-color: #4A4A4A;
+    z-index: 1;
+}
+
+#controll
+{
+	position: absolute;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+    color: white;
+    font-weight: 900;
+    line-height: 100px;
+}
+
+#left
+{
+	width: 50%;
+	height: 100%;
+	float: left;
+    background: rgba(10,10,10,0.5);
+}
+
+#right
+{
+	width: 50%;
+	height: 100%;
+	float: right;
+    background: rgba(10,10,10,0.5);
+}
+
+#player
+{
+	position: absolute;
+    bottom: 30px;
+    left: 30%;
+    margin: auto auto;
+	width: 125px;
+	height: 125px;
+	-webkit-transform: translateZ(0);
+	background-image: url(http://i.imgur.com/VTyo70d.png);
+    z-index: 2;
+}
+
+.run
+{
+	-moz-animation:player_run 0.5s infinite steps(12), linear;
+	-webkit-animation:player_run 0.5s infinite steps(12), linear;
+}
+
+.jump
+{
+	-moz-animation:player_jump 0.7s steps(11), linear;
+	-webkit-animation:player_jump 0.7s steps(11), linear;
+}
+
+.roll
+{
+	-moz-animation:player_roll 0.5s steps(12), linear;
+	-webkit-animation:player_roll 0.5s steps(12), linear;
+}
+
+@-moz-keyframes player_run {
+	0% { background-position:    0px 0px; }
+    100% { background-position: -1500px 0px; }
+}
+
+@-webkit-keyframes player_run {
+	 0% { background-position:    0px 0px; }
+     100% { background-position: -1500px 0px; }
+}
+
+@-moz-keyframes player_jump {
+	0% { background-position:    0px -250px; }
+    100% { background-position: -1375px -250px; }
+}
+
+@-webkit-keyframes player_jump {
+	 0% { background-position:    -0px -250px; }
+     100% { background-position: -1375px -250px; }
+}
+
+@-moz-keyframes player_roll {
+	0% { background-position:    0px -125px; }
+    100% { background-position: -1500px -125px; }
+}
+
+@-webkit-keyframes player_roll {
+	 0% { background-position:    0px -125px; }
+     100% { background-position: -1500px -125px; }
+}

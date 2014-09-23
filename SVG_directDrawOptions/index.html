@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SVG direct draw</title>
+  <meta name="description" content="SVG direct draw">
+    <LINK type="text/css" href="css/style.css"  rel="stylesheet"/>
+    <script src="/js/main.js"></script>
+</head>
+
+<body onload="init()">
+    <!-- SVG main element -->
+    <svg id="SVG_scene" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
+    
+    <p>X pos<br>
+    <input id="cx" type="range" min="0" max="500" step="1" value="100" onchange="draw(event)"/>
+    </p>
+    <p>Y pos<br>
+    <input id="cy" type="range" min="0" max="500" step="1" value="100" onchange="draw(event)"/>
+    </p>
+    <p>Radius<br>
+    <input id="r" type="range" min="0" max="500" step="1" value="50" onchange="draw(event)"/>
+    </p>
+    <p>Border width<br>
+    <input id="stroke-width" type="range" min="0" max="50" step="1" value="2" onchange="draw(event)"/>
+    </p>
+    <p>Fill color<br>
+    <input id="fill" type="color" name="favcolor" value="#000000" onchange="draw(event)">
+    </p>    
+    <p>Border color<br>
+    <input id="stroke" type="color" name="favcolor" value="#00FFD0" onchange="draw(event)">
+    </p>    
+    
+  <script src="js/script.js"> </script>
+</body>
+</html>

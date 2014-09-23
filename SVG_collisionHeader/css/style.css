@@ -1,0 +1,14 @@
+html,body
+{
+    max-height: 100%;
+    margin: 0;
+    padding:0;
+    overflow:hidden;
+    background:url(http://i.imgur.com/dpnvQ5Y.png);
+}
+
+#SVG_scene
+{
+    min-width: 100%;
+    min-height:100%;
+}

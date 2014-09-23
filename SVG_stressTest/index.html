@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+ <body onload="init()">
+     
+<h2>SVG stress test</h2>
+    
+    <button class="addone" onclick="addSquare()">add one</button>
+    <button class="addone" onclick="addHundert()">add hunderd</button>
+    
+    <div id="select">
+    <input type="radio" name="Zahlmethode" value="svg" checked onchange="renderType(event)"> SVG Animation
+    <input type="radio" name="Zahlmethode" value="css" onchange="renderType(event)"> CSS Animation
+    </div>
+    <div id="svg_Wrapper">
+    <svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
+     
+    </svg>
+        
+        </div>
+    <p id="onScreen">Squares on screen:</p>
+        
+         </body>
+</html>

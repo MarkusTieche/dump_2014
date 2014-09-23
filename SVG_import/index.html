@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SVG direct draw</title>
+  <meta name="description" content="SVG direct draw">
+    <LINK type="text/css" href="css/style.css"  rel="stylesheet"/>
+<!--    <script src="/js/main.js"></script>-->
+</head>
+
+<body onload="init()">
+    <svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
+     <g id="layer1" stroke-linejoin="miter" stroke-dashoffset="0" stroke="#000" stroke-linecap="butt" stroke-dasharray="none" stroke-miterlimit="4" stroke-width="1">
+  <path id="circle_2" fill="#ff004b" d="M415.71429,212.36218c4.90816,132.72606-143.06066,236.63542-266.54833,189.26002-122.362831-36.304-177.663691-199.59056-101.126422-302.188514,71.167942-111.877016,251.875662-115.567736,327.619392-6.765939,25.83858,34.174353,40.15438,76.849343,40.05536,119.694433z"/>
+  <path id="circle_1" fill="#0FF" d="m374.28571,284.50505c1.21769,29.31872-18.59767,56.36638-44.49704,68.60211-18.98939,9.443-41.85961,10.96418-61.65727,3.07653-39.37693-12.44551-61.30295-61.04754-46.15028-99.1191,8.12558-19.44694,23.86005-36.06404,43.89854-43.28524,31.16075-12.00491,70.53363-4.03332,91.34223,23.04479,10.82706,13.39583,17.15197,30.40879,17.06382,47.68091z"/>
+ </g>
+    </svg>
+  <script>
+        function init()
+        {
+           var img = document.body,
+                style = img.currentStyle || window.getComputedStyle(img, false),
+            bi = style.backgroundImage.slice(4, -1);
+           document.getElementById("wrapper").appendChild(bi);
+        } 
+      
+       
+    </script>
+</body>
+</html>

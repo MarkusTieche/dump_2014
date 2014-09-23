@@ -1,0 +1,19 @@
+html,body
+{
+    max-height: 100%;
+    overflow:hidden;
+    margin: 0;
+    padding:0;
+    background:#66CCFF;
+}
+
+#SVG_scene
+{
+    min-width: 100%;
+    min-height:100%;
+}
+
+#Circle
+{
+    cursor:pointer;
+}

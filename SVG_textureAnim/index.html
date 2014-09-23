@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SVG direct draw</title>
+  <meta name="description" content="SVG direct draw">
+    <LINK type="text/css" href="css/style.css"  rel="stylesheet"/>
+    <script src="/js/main.js"></script>
+</head>
+<body onload="init()">
+    <svg id="SVG_scene" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <defs id="defs">
+        <pattern id="pattern1" x="0" y="0" width="128" height="128" patternContentUnits="userSpaceOnUse" patternUnits="userSpaceOnUse">
+            <image x="0" y="0" width="128" height="128" xlink:href="http://imgur.com/dKnhDzJ.png" />
+           <animate
+                attributeName="x"
+                calcMode = "discrete"
+                values="0;-32;-64;-96;-128"
+                keyTimes="0;0.25;0.5;0.75;1"
+                dur="0.4s"
+                begin="0s"
+                repeatCount="indefinite" />
+            
+            <animate
+                attributeName="y"
+                calcMode = "discrete"
+                values="0;-32;-64;-96;-128"
+                keyTimes="0;0.25;0.50;0.75;1"
+                dur="1.6s"
+                begin="0s"
+                repeatCount="indefinite" />
+        </pattern>
+        
+        <pattern id="pattern2" x="0" y="0" width="128" height="128" patternContentUnits="userSpaceOnUse" patternUnits="userSpaceOnUse">
+            <image x="0" y="0" width="128" height="128" xlink:href="http://imgur.com/dKnhDzJ.png" />
+        </pattern>
+    </defs>
+        <rect id="rect_1" x="0" y="0" width="32px" height="32px" fill="url(#pattern1)" transform="translate(10,200) scale(5)"></rect>
+        <rect id="rect_2" x="0" y="0" width="128px" height="128px" fill="url(#pattern2)" transform="translate(10,10)"></rect>
+    </svg>
+</body>
+</html>

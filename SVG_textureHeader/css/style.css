@@ -1,0 +1,16 @@
+html, body
+{
+    height:100%;
+    width:100%;
+    font-family:'Helvetica';
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
+    background:#0f4a60;
+}
+
+svg
+{
+    min-width: 100%;
+    min-height:100%;
+}
