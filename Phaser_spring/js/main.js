@@ -4,8 +4,8 @@ var h;
 
 function init()
 {
-     w = window.innerWidth;
-     h = window.innerHeight;
+      w = document.body.offsetWidth;
+     h = document.body.offsetHeight;
     
     game = new Phaser.Game(w, h, Phaser.AUTO, '', { preload: preload, create: create, update: update });
     
